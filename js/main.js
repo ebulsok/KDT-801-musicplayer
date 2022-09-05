@@ -12,18 +12,6 @@ const names = ["cardio", "groove", "happy", "light", "lily", "limes", "pop", "sw
 
 let before = -1;
 
-let startX, endX;
-let temp = 0;
-document.querySelector("body").addEventListener("mousedown", function(e) {
-    startX = e.screenX;
-    
-});
-document.querySelector("body").addEventListener("mouseup", function(e) {
-    endX = e.screenX;
-    frame.style.transform = `rotate(${temp = temp - (startX-endX)/15}deg)`;
-    
-});
-
 for(let i = 0; i < len; i++) {
     list[i].style.transform = `rotate(${deg * i}deg) translateY(-100vh)`;
 
